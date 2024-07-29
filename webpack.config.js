@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/'  // Aggiunto per supportare le rotte con React Router
+    publicPath: '/911restoration-home-mockup/'
   },
   module: {
     rules: [
