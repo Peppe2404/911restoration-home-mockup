@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://peppe2404.github.io/911restoration-home-mockup",
+  "homepage": "https://peppe2404.github.io/911restoration-home-mockup/",
   "keywords": [],
   "author": "",
   "license": "ISC",
