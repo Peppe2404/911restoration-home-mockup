@@ -4,8 +4,9 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
+    publicPath: '/'  // Aggiunto per supportare le rotte con React Router
   },
   module: {
     rules: [
@@ -32,7 +33,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'build'),
     compress: true,
     port: 3000,
   },
