@@ -6,13 +6,16 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/911restoration-home-mockup/'
+    publicPath: '/911restoration-home-mockup/'  // Imposta il publicPath per GitHub Pages
   },
   module: {
     rules: [
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[hash][ext][query]'
+        }
       },
       {
         test: /\.(js|jsx)$/,
