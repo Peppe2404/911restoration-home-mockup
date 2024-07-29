@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const logo = require('./assets/911_restoration_logo_transparent.png');
+const logo = import('./assets/911_restoration_logo_transparent.png');
 
 const TextSlideshow = ({ texts }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
