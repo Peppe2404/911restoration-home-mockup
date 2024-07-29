@@ -1,11 +1,14 @@
 {
   "name": "911-restoration-mobile",
   "version": "1.0.0",
+  "homepage": "https://Peppe2404.github.io/911-restoration-mobile",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
