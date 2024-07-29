@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/911restoration-home-mockup/'  // Imposta il publicPath per GitHub Pages
+    publicPath: './'
   },
   module: {
     rules: [
